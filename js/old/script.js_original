@@ -1,0 +1,8 @@
+"use strict";
+
+$(function(){
+	$.post("php/worked.php", {request: "include", queryString: document.location.search}, function(data){
+		if(data) $("#include_data").append(data);
+	});
+});
+

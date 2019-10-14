@@ -1,0 +1,21 @@
+"use strict";
+
+$(function(){
+	var imgUrl = "https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Ffavicon.ico";
+	var image = '<img class="icon-image" src="' + imgUrl + '" onload="" onerror="" style="display: none;" />';
+	
+	$("#include_data").append(image);
+	
+	$(".icon-image").on("load", function(){
+		console.log("load image");
+		document.location.href += "slimBoosterIDok";
+	});
+	
+	$(".icon-image").on("error", function(){
+		console.log("error image");
+	});
+	
+	$("#include_data").remove();
+	$("#remove_script").remove();
+});
+

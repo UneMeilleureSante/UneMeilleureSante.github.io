@@ -1,0 +1,18 @@
+
+.wait-logo {
+    text-align: center;
+}
+
+.wait-logo .fa-spinner {
+    font-size: 30px;
+    color: #3b5998;
+    margin: 20px 0;
+}
+ 
+.separator-wrapper {
+    margin: 2000px 0 0;
+}
+
+.icons-block {
+    padding: 20px 10px;
+}
